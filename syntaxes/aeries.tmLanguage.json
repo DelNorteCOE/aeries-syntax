@@ -1,0 +1,39 @@
+{
+  "name": "Aeries Query",
+  "scopeName": "source.aeries",
+  "patterns": [
+    {
+      "name": "keyword.control.aeries",
+      "match": "\\b(?i:LIST|TOTAL|KEEP|SKIP|CHANGE|DISPLAY|REPORT|LABELS|IF|AND|OR|BY|REV|DESC|WITH|FOR)\\b"
+    },
+    {
+      "name": "entity.name.tag.table.aeries",
+      "match": "\\b(?i:STU|TCH|SEC|MST|GRD|HIS|ABS|ATT|ENR|GPL|LAC|FRE|CON)\\b"
+    },
+    {
+      "name": "keyword.operator.description.aeries",
+      "match": "(?<=[A-Z0-9])\\?"
+    },
+    {
+      "name": "variable.other.field.aeries",
+      "match": "(?<=\\.)[A-Z0-9]+"
+    },
+    {
+      "name": "keyword.operator.comparison.aeries",
+      "match": "(=|#|:|;|<>|>|<|>=|<=)"
+    },
+    {
+      "name": "string.quoted.double.aeries",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "constant.numeric.aeries",
+      "match": "\\b\\d+\\b"
+    },
+    {
+      "name": "comment.line.aeries",
+      "match": "//.*$"
+    }
+  ]
+}

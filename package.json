@@ -1,0 +1,45 @@
+{
+  "name": "aeries-query-syntax",
+  "displayName": "Aeries SIS Query Syntax",
+  "description": "Syntax highlighting for Aeries SIS Query language",
+  "version": "0.0.1",
+  "publisher": "Del Norte County Office of Education",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "aeries",
+        "aliases": [
+          "Aeries Query",
+          "aeries"
+        ],
+        "extensions": [
+          ".aeries",
+          ".aqy"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aeries",
+        "scopeName": "source.aeries",
+        "path": "./syntaxes/aeries.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "aeries",
+        "path": "./snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DelNorteCOE/aeries-syntax"
+  }
+}

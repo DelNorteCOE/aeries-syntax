@@ -1,0 +1,32 @@
+{
+  "Basic Student List": {
+    "prefix": "stulist",
+    "body": ["LIST STU NM ID GR IF $1"],
+    "description": "Basic Student List with Name, ID, and Grade"
+  },
+  "Keep Students": {
+    "prefix": "keepstu",
+    "body": ["KEEP STU IF $1 = $2"],
+    "description": "Keep students based on a condition"
+  },
+  "Section/Teacher Join": {
+    "prefix": "stu-sec-tch",
+    "body": ["LIST STU SEC TCH STU.NM TCH.TE SEC.CN IF SEC.CN = $1"],
+    "description": "Join Students to Sections and Teachers"
+  },
+  "Address Labels": {
+    "prefix": "labels",
+    "body": ["LABELS STU NM AD CY ST ZP IF $1"],
+    "description": "Generate standard address labels"
+  },
+  "Total by Grade": {
+    "prefix": "totalgr",
+    "body": ["TOTAL STU GR BY GR"],
+    "description": "Count students per grade level"
+  },
+  "Field Description": {
+    "prefix": "desc",
+    "body": ["${1:FIELD}?"],
+    "description": "Appends the description operator to a field"
+  }
+}
