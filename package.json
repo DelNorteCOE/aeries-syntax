@@ -3,7 +3,8 @@
   "displayName": "Aeries SIS Query Syntax",
   "description": "Syntax highlighting for Aeries SIS Query language",
   "version": "0.0.1",
-  "publisher": "Del Norte County Office of Education",
+  "publisher": "DelNorteCOE",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.50.0"
   },
@@ -21,7 +22,8 @@
         "extensions": [
           ".aeries",
           ".aqy"
-        ]
+        ],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
